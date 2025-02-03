@@ -1,13 +1,13 @@
-"use client"; // Enables client-side rendering for this component
+"use client"; 
 
 import React, { useState, useEffect, useCallback } from "react"; // Import React hooks
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image"; 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel"; // Import custom Carousel components
-import { Button } from "@/components/ui/button"; // Import custom Button component
+} from "@/components/ui/carousel"; 
+import { Button } from "@/components/ui/button"; 
 import { PlayIcon, PauseIcon } from "lucide-react"; // Import icons from lucide-react
 
 // Define the ImageData interface
@@ -24,15 +24,12 @@ interface ImageData {
 }
 
 export default function ImageSlider() {
-  // State to manage the images fetched from the API
-  const [images, setImages] = useState<ImageData[]>([]);
-  // State to manage the current image index in the carousel
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  // State to manage the play/pause status of the carousel
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const interval = 5000; // Interval for the carousel autoplay
 
-  // Function to fetch images from Unsplash API
+  const [images, setImages] = useState<ImageData[]>([]);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  const interval = 5000; 
+  
   const fetchImages = async (): Promise<void> => {
     try {
       const response = await fetch(
@@ -73,7 +70,7 @@ export default function ImageSlider() {
     <div 
     className="flex items-center justify-center min-h-screen p-4"
             style={{
-               backgroundImage: 'url("https://media.istockphoto.com/id/1140646877/vector/angled-abstract-gradient-background.jpg?s=612x612&w=0&k=20&c=nuXSdmnxURE2NBFjWRyDVQ5ysUIVwADiJXDsByUtCFU=")',
+               backgroundImage: 'url("https://img.freepik.com/free-photo/geometric-background-with-copy-space_24972-1806.jpg?t=st=1738615911~exp=1738619511~hmac=bd93ba281ca299cc317c31020bb4f6bbc9d290394089b7b4a01df4d29182d69a&w=740")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}

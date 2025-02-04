@@ -70,7 +70,7 @@ export default function ImageSlider() {
     <div 
     className="flex items-center justify-center min-h-screen p-4"
             style={{
-               backgroundImage: 'url("https://img.freepik.com/free-photo/geometric-background-with-copy-space_24972-1806.jpg?t=st=1738615911~exp=1738619511~hmac=bd93ba281ca299cc317c31020bb4f6bbc9d290394089b7b4a01df4d29182d69a&w=740")',
+               backgroundImage: 'url("https://media.istockphoto.com/id/1140646877/vector/angled-abstract-gradient-background.jpg?s=612x612&w=0&k=20&c=nuXSdmnxURE2NBFjWRyDVQ5ysUIVwADiJXDsByUtCFU=")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}
